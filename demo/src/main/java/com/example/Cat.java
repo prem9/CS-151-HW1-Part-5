@@ -4,18 +4,15 @@ package com.example;
  * Hello world!
  *
  */
-public class Dog extends Animal
+public class Cat extends Animal 
 {
 
-    Dog(String name, String type, int age, String gender, String environment, double speed) {
+    Cat(String name, String type, int age, String gender, String environment, double speed) {
         super(name, type, age, gender, environment, speed);
         //TODO Auto-generated constructor stub
     }
 
-    public void Bark()
-    {
-        System.out.println( "Bark!" );
-    }
+    
     public void greetHuman()
     {
         System.out.println( "Hello World!" );
@@ -25,4 +22,10 @@ public class Dog extends Animal
         System.out.println( "walks" );
     }
 
+
+    @Override
+    public void scratch() {
+        // TODO Auto-generated method stub
+        System.out.println("scratch");
+    }
 }

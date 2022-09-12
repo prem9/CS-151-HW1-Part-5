@@ -4,7 +4,7 @@ package com.example;
  * Hello world!
  *
  */
-public class Animal  implements Domesticated 
+public class Animal  implements Domesticated, Scratcher, Swimmer
 {
     private String animalType;
     private String animalName;
@@ -16,52 +16,110 @@ public class Animal  implements Domesticated
     {
         System.out.println( "Hello World!" );
     }*/
-    Animal(String name)
+    /**
+     * @param name
+     * @param type
+     * @param age
+     * @param gender
+     * @param environment
+     * @param speed
+     */
+    Animal(String name, String type, int age, String gender, String environment, double speed)
     {
         this.animalName = name;
+        this.animalType = type;
+        this.age = age;
+        this.gender = gender;
+        this.environment = environment;
+        this.speed = speed;
     }
-
+    /**
+     * 
+     */
     public void greetHuman()
     {
-        System.out.println( "Hello World!" );
+        
     }
+    /**
+     * 
+     */
     public void walk()
     {
-        System.out.println( "%s "+animalType +"walking" );
+        
     }
+    /**
+     * 
+     */
+    public void scratch()
+    {
 
+    }
+    /**
+     * 
+     */
+    public void swim()
+    {
+
+    }
+    /**
+     * @param animalTypeSet
+     */
     public void setAnimalType(String animalTypeSet)
     {
         animalType = animalTypeSet;
     }
+    /**
+     * @return
+     */
     public String getAnimalType()
     {
         return animalType;
     }
+    /**
+     * @param animalNameSet
+     */
     public void setAnimalName(String animalNameSet)
     {
         animalName = animalNameSet;
     }
+    /**
+     * @return 
+     */
     public String getAnimalName()
     {
         return animalName;
     }
+    /**
+     * @param ageSet
+     */
     public void setAge(int ageSet)
     {
         age = ageSet;
     }
+    /**
+     * @return
+     */
     public int getAge()
     {
         return age;
     }
+    /**
+     * @param genderSet
+     */
     public void setGender(String genderSet)
     {
         gender = genderSet;
     }
+    /**
+     * @return
+     */
     public String getGender()
     {
         return gender;
     }
+    /**
+     * @param environmentSet
+     */
     public void setEnvironment(String environmentSet)
     {
         environment = environmentSet;
@@ -77,6 +135,12 @@ public class Animal  implements Domesticated
     public double getSpeed()
     {
         return speed;
+    }
+    public String toString()
+    {
+        String animalInfo = "Animal Info: " + this.getAnimalType() + ", " + this.getAnimalName() + ", " + this.getEnvironment() + ", " + this.getGender() + ", "
+        + this.getSpeed();
+        return animalInfo;
     }
 
 }
