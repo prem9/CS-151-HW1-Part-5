@@ -1,7 +1,7 @@
 package com.example;
 
 /**
- * Hello world!
+ * Sets up Cat class
  *
  */
 public class Cat extends Animal 

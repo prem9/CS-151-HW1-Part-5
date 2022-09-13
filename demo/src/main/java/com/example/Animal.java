@@ -1,7 +1,7 @@
 package com.example;
 
 /**
- * Hello world!
+ * sets up animal
  *
  */
 public class Animal  implements Domesticated, Scratcher, Swimmer
@@ -17,7 +17,7 @@ public class Animal  implements Domesticated, Scratcher, Swimmer
         System.out.println( "Hello World!" );
     }*/
     /**
-     * @param name
+     * @param name 
      * @param type
      * @param age
      * @param gender
@@ -62,80 +62,92 @@ public class Animal  implements Domesticated, Scratcher, Swimmer
 
     }
     /**
-     * @param animalTypeSet
+     * @param animalTypeSet sets animal type
      */
     public void setAnimalType(String animalTypeSet)
     {
         animalType = animalTypeSet;
     }
     /**
-     * @return
+     * @return retrieves animal type
      */
     public String getAnimalType()
     {
         return animalType;
     }
     /**
-     * @param animalNameSet
+     * @param animalNameSet sets animal name
      */
     public void setAnimalName(String animalNameSet)
     {
         animalName = animalNameSet;
     }
     /**
-     * @return 
+     * @return retrieves animal name
      */
     public String getAnimalName()
     {
         return animalName;
     }
     /**
-     * @param ageSet
+     * @param ageSet sets age of animal
      */
     public void setAge(int ageSet)
     {
         age = ageSet;
     }
     /**
-     * @return
+     * @return retrieves age of animal
      */
     public int getAge()
     {
         return age;
     }
     /**
-     * @param genderSet
+     * @param genderSet sets gender of animal
      */
     public void setGender(String genderSet)
     {
         gender = genderSet;
     }
     /**
-     * @return
+     * @return retrieves gender of animal
      */
     public String getGender()
     {
         return gender;
     }
     /**
-     * @param environmentSet
+     * @param environmentSet sets animal's environment
      */
     public void setEnvironment(String environmentSet)
     {
         environment = environmentSet;
     }
+    /**
+     * @return retrieves animal's environment
+     */
     public String getEnvironment()
     {
         return environment;
     }
+    /**
+     * @param speedSet sets animal's speed
+     */
     public void setSpeed(double speedSet)
     {
         speed = speedSet;
     }
+    /**
+     * @return retrieves animal's speed
+     */
     public double getSpeed()
     {
         return speed;
     }
+    /**
+     * @return retrieves all the information of the animal in a string
+     */
     public String toString()
     {
         String animalInfo = "Animal Info: " + this.getAnimalType() + ", " + this.getAnimalName() + ", " + this.getEnvironment() + ", " + this.getGender() + ", "

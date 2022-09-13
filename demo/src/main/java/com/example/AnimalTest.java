@@ -1,7 +1,7 @@
 package com.example;
 
 /**
- * Hello world!
+ * tests all the code of animal
  *
  */
 public class AnimalTest
@@ -13,7 +13,7 @@ public class AnimalTest
         Animal whale1 = new Whale("Test1", "Whale", 11, "male", "water", 0);
         Animal cat1 = new Cat("Test2", "Cat", 11, "male", "domesticated", 0);
         Animal racoon1 = new Racoon("Test1", "Racoon", 11, "male", "Land", 0);
-        
+
         System.out.println("Dog");
         dog1.greetHuman();
         System.out.println("Whale");
@@ -55,6 +55,8 @@ public class AnimalTest
         cat1.swim();
         System.out.println("Racoon");
         racoon1.swim();
+
+        System.out.println();
 
         System.out.println(dog1.toString());
         System.out.println(whale1.toString());
