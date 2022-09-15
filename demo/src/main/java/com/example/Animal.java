@@ -36,6 +36,22 @@ public class Animal  implements Domesticated, Scratcher, Swimmer
     /**
      * 
      */
+    public void move()
+    {
+        System.out.println("Moving");
+    }
+    public void sound()
+    {
+        System.out.println("Sound");
+    }
+    public void eat()
+    {
+        System.out.println("eating");
+    }
+    public void sleep()
+    {
+        System.out.println("sleeping");
+    }
     public void greetHuman()
     {
         

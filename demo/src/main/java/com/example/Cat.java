@@ -15,7 +15,7 @@ public class Cat extends Animal
     
     public void greetHuman()
     {
-        System.out.println( "Hello World!" );
+        System.out.println( "Hello Hooman!" );
     }
     public void walk()
     {
